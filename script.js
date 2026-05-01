@@ -1,7 +1,7 @@
 // WhatsApp number - Update with your actual WhatsApp number
   const whatsappNumber = "18889903421";
   const phoneNumber = "18889903421";
-  const emailAddress = "hello@stephenmarks.com";
+  const emailAddress = "info@stephenmarks.in";
   
   // Open WhatsApp chat
   function openWhatsApp() {
