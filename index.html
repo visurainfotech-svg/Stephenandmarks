@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Stephen & Marks | Premium Real Estate Photo Editing</title>
+  <!-- Google Fonts + Font Awesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-flex">
+
+    <div class="logo" onclick="showServiceModal('home')">
+      <h1>Stephen <span>&</span> Marks</h1>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="showServiceModal('real-estate-editing')">Real Estate Editing</a></li>
+      <li><a onclick="showServiceModal('virtual-staging')">Virtual Staging</a></li>
+      <li><a onclick="showServiceModal('floor-plans')">Floor Plans</a></li>
+      <li><a onclick="showServiceModal('portfolio')">Portfolio</a></li>
+      <li><a onclick="showServiceModal('pricing')">Pricing</a></li>
+      <li><a onclick="showServiceModal('contact')">Contact</a></li>
+      <li><a onclick="showServiceModal('quote')" class="btn-cta-small">Get Quote</a></li>
+    </ul>
+
+  </div>
+</header>
+
+<main>
+  <div id="home-page">
+    <section class="hero-fullscreen">
+      <div class="hero-content-left">
+        <h1>Real Estate Image Editing Services</h1>
+        <p>High-quality photo editing, HDR blending, sky replacement, virtual staging, floor plans, video enhancements and more for real estate photographers and agencies.</p>
+        <div class="btn-group">
+          <a onclick="showServiceModal('quote')" class="btn-orange">Get A Quote <i class="fas fa-chevron-right"></i></a>
+          <a onclick="openWhatsApp()" class="btn-orange btn-outline-light">Start Chat <i class="fas fa-comment"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container section">
+      <h2 class="section-title">Precision Editing, Elevated Results</h2>
+      <p class="section-sub">Industry-leading post production for real estate visuals that sell faster.</p>
+      <div class="service-grid">
+
+  <div class="service-card">
+   <div class="card-img">
+  <img src="https://i.ibb.co/SDmwWtvy/PRINT-DSC1173-6.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>HDR</h3>
+      <p>Flawless exposure fusion eliminating harsh shadows & blown highlights.</p>
+      <a href="https://hdrstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/TM2sVRJD/Digital1photography-189.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>Twilight Editing</h3>
+      <p>Dramatic dusk aesthetics, warm interior lights & dramatic skies.</p>
+      <a href="https://twilightstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/xS4LCV7R/skye-studios-Pzke-Y0i98io-unsplash.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>Video Editing</h3>
+      <p>Professional real estate video editing, color grading and walkthrough enhancements.</p>
+      
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/FLwKcKnn/mark-cruz-VW2o-U66mwbc-unsplash.jpg">
+</div>
+    <div class="card-content">
+      <h3>Image to Video Editing</h3>
+      <p>Transform static property photos into engaging video slideshows.</p>
+      
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/YTj38b98/Sample-3-2.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>2D Floor Plan</h3>
+      <p>Detailed, accurate 2D floor plans with measurements and labels.</p>
+      <a href="https://2dfloorplan.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/tpsrwJYL/Digital-1-Photography-7057.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>Virtual Staging</h3>
+      <p>Modern, lifelike virtual furniture placement to stage empty rooms beautifully.</p>
+      <a href="https://virtualstagingstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/R5Wkmd6/Digital-1-Photography-4072.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>Flash Images</h3>
+      <p>Modern, photorealistic enhancements that instantly transform real estate images into stunning, market-ready visuals.</p>
+      <a href="https://flashstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="card-img">
+  <img src="https://i.ibb.co/84Rs56Dt/Digital-1-Photography-6206-R.jpg" alt="HDR Editing">
+</div>
+    <div class="card-content">
+      <h3>Virtual Renovation</h3>
+      <p>Visualize property transformations: flooring, kitchen, bathroom makeovers.</p>
+      <a href="https://virtualrenovation.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+    <div class="container">
+      <div class="help-wrapper">
+        <h3>Need Help? <span style="color:#e65c1e;">Contact Us</span></h3>
+        <p>Specific editing requirements? Our skilled team ensures polished, professional images ready to impress.</p>
+        <div class="help-buttons">
+          <a onclick="showServiceModal('contact')" class="btn-orange" style="background:#111;">Contact Support <i class="fas fa-headset"></i></a>
+          <a onclick="openWhatsApp()" class="btn-orange" style="background:white; color:#e65c1e; border:1px solid #e65c1e;">Live Chat <i class="fas fa-comment-dots"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin: 30px auto;">
+      <h2 class="section-title" style="margin-bottom: 50px;">What Our Clients Say</h2>
+      <div class="testimonial-flex">
+        <div class="testi-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Stephen & Marks delivers the most consistent HDR and staging work. Our listings shine every time."</p><h4>— Sophia Reed, Photographer</h4></div>
+        <div class="testi-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Their video editing and virtual renovation service is a game-changer. The results are breathtaking."</p><h4>— James Carter, Agency Partner</h4></div>
+        <div class="testi-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The 3D floor plans and twilight editing are flawless. Quality is unmatched."</p><h4>— Emily Lawson, Broker</h4></div>
+      </div>
+    </div>
+
+    <div class="container" style="margin: 70px auto 20px;">
+      <h2 class="section-title">Simple 4-Step Workflow</h2>
+      <div class="steps-row">
+        <div class="step-card"><div class="step-num">1</div><h4>Upload Photos</h4><p>Share your raw images or videos via our secure portal.</p></div>
+        <div class="step-card"><div class="step-num">2</div><h4>Select Service</h4><p>Pick enhancement, staging, video, floor plans & more.</p></div>
+        <div class="step-card"><div class="step-num">3</div><h4>Share Instructions</h4><p>Notes, references & deadline.</p></div>
+        <div class="step-card"><div class="step-num">4</div><h4>Download Finals</h4><p>Receive high-res images/videos ready for listing.</p></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-col"><h4>Professional enhancement</h4><p>Stephen & Marks premium real estate editing studio</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a onclick="showServiceModal('real-estate-editing')">Real Estate Editing</a></li><li><a onclick="showServiceModal('virtual-staging')">Virtual Staging</a></li><li><a onclick="showServiceModal('floor-plans')">Floor Plans</a></li><li><a onclick="showServiceModal('portfolio')">Portfolio</a></li><li><a onclick="showServiceModal('pricing')">Pricing</a></li><li><a onclick="showServiceModal('contact')">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-envelope"></i> <a onclick="openEmail()">hello@stephenmarks.com</a></li><li><i class="fas fa-phone"></i> <a onclick="makeCall()">+91 96321 55956</a></li><li><i class="fas fa-map-pin"></i> 19, Krishna Nivas 2nd Cross, <br>RM Nagar Bangalore - 560016. </li></ul><a onclick="openWhatsApp()" class="whatsapp-badge"><i class="fab fa-whatsapp"></i> WhatsApp Inquiry</a></div>
+    </div>
+    <div class="copyright" style="text-align:center; margin-top: 50px;">   © 2019 Stephen & Marks All Rights Reserved.</div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="actionModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div id="modalBody">
+      <h3 id="modalTitle">Welcome</h3>
+      <p id="modalMessage">Thank you for visiting Stephen & Marks. How can we help you today?</p>
+      <button class="modal-btn" onclick="closeModal()">Got it</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
