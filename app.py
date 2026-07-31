@@ -41,7 +41,10 @@ def add_cors_headers(response):
 @app.get("/")
 def home():
     return send_from_directory(BASE_DIR, "index.html")
-
+    
+@app.route("/<path:filename>")
+def static_files(filename):
+    return send_from_directory(BASE_DIR, filename)
 
 @app.route("/api/contact", methods=["POST", "OPTIONS"])
 def contact():
