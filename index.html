@@ -1,214 +1,813 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <title>Real Estate Image Editing | Stephen & Marks</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stephen &amp; Marks.Co - Real Estate Photography, Film &amp; Floor Plans</title>
+<meta content="Stephen &amp; Marks.Co is a real estate media studio offering photography, videography, floor plans, and image-to-video services." name="description"/>
+<!-- Google Fonts: Fraunces (display) + Manrope (body/utility) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 
-<meta name="description" content="Professional real estate photo editing, virtual staging, and media services in India.">
-
-<meta name="keywords" content="real estate editing, virtual staging, photo editing, property images">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Stephen & Marks | Premium Real Estate Photo Editing</title>
-  <!-- Google Fonts + Font Awesome 6 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=zoom-preview-20260721"/>
 </head>
 <body>
-
-<header class="navbar" id="navbar">
-  <div class="container nav-flex">
-
-    <div class="logo" onclick="showServiceModal('home')">
-      <h1>Stephen <span>&</span> Marks</h1>
-    </div>
-
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </div>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a onclick="showServiceModal('real-estate-editing')">Real Estate Editing</a></li>
-      <li><a onclick="showServiceModal('virtual-staging')">Virtual Staging</a></li>
-      <li><a onclick="showServiceModal('floor-plans')">Floor Plans</a></li>
-      <li><a onclick="showServiceModal('portfolio')">Portfolio</a></li>
-      <li><a onclick="showServiceModal('pricing')">Pricing</a></li>
-      <li><a onclick="showServiceModal('contact')">Contact</a></li>
-      <li><a onclick="showServiceModal('quote')" class="btn-cta-small">Get Quote</a></li>
-    </ul>
-
+     <div class="page-loader" id="pageLoader" style="display:none;">
+  <div class="loader-inner">
+    <div class="loader-logo">Stephen <span>&amp;</span> Marks.Co</div>
   </div>
+</div>
+<!-- ============================================
+     NAV
+     ============================================ -->
+<header class="site-nav" id="siteNav">
+<a class="logo" href="#home">Stephen <span>&amp;</span> Marks.Co</a>
+<nav class="main-links" id="mainLinks">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#work">Our Works</a>
+<a href="#process">Process</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="nav-cta" href="#contact">Start a project</a>
+<button aria-expanded="false" aria-label="Toggle menu" class="burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</button>
 </header>
-
-<main>
-  <div id="home-page">
-    <section class="hero-fullscreen">
-      <div class="hero-content-left">
-        <h1>Real Estate Image Editing Services</h1>
-        <p>High-quality photo editing, HDR blending, sky replacement, virtual staging, floor plans, video enhancements and more for real estate photographers and agencies.</p>
-        <div class="btn-group">
-          <a onclick="showServiceModal('quote')" class="btn-orange">Get A Quote <i class="fas fa-chevron-right"></i></a>
-          <a onclick="openWhatsApp()" class="btn-orange btn-outline-light">Start Chat <i class="fas fa-comment"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <div class="container section">
-      <h2 class="section-title">Precision Editing, Elevated Results</h2>
-      <p class="section-sub">Industry-leading post production for real estate visuals that sell faster.</p>
-      <div class="service-grid">
-
-  <div class="service-card">
-   <div class="card-img">
-  <img src="https://i.ibb.co/SDmwWtvy/PRINT-DSC1173-6.jpg" alt="HDR Editing">
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero" id="home">
+<div class="hero-media">
+<img alt="Modern living room bathed in natural light" src="https://i.ibb.co/ksZh1cPX/Digital1photography-176-a.jpg"/>
 </div>
-    <div class="card-content">
-      <h3>HDR</h3>
-      <p>Flawless exposure fusion eliminating harsh shadows & blown highlights.</p>
-      <a href="https://hdrstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
+<div class="wrap hero-inner">
+<p class="hero-eyebrow eyebrow">Real estate media editing</p>
+<h1>Raw footage, cut<br/>the way it <em>deserves</em> to be seen.</h1>
+<p class="hero-sub">
+<span>Photo Editing</span><span class="divider">/</span>
+<span>Video Editing</span><span class="divider">/</span>
+<span>Virtual Staging</span><span class="divider">/</span>
+<span>Floor Plans</span><span class="divider">/</span>
+<span>Image-to-Video</span>
+</p>
+<div class="hero-foot">
+<a class="scroll-cue" href="#work"><span class="line"></span> View the work</a>
+<div class="hero-stats">
+<div><strong>5</strong><span>Services</span></div>
+<div><strong>48h</strong><span>Typical turnaround</span></div>
+<div><strong>8</strong><span>Revisions until it's right</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================
+     ABOUT
+     ============================================ -->
+<section class="about" id="about">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Who we are</p>
+<h2 style="margin-top:20px;">Two names.<br/>One standard.</h2>
+</div>
+<div class="about-copy reveal">
+<p>Stephen &amp; Marks.Co is an editing studio built around one idea: a listing's first impression happens on a screen, long before anyone stands in the doorway. So that first impression has to hold up - <span class="highlight">colour-true, well paced, and true to how the space actually feels.</span></p>
+<p>Send us your raw photos, video, or drone footage and we handle the rest - colour correction, sky replacement, cuts, floor plan drafting, and turning still photos into short, moving footage when there's no time or budget for a full video shoot.</p>
+</div>
+</div>
+</section>
+<!-- ============================================
+     SERVICES
+     ============================================ -->
+<section id="services">
+<div class="wrap">
+<div class="section-head reveal">
+<h2>What we edit and deliver</h2>
+<p>Four services, one editor - send raw files from any shoot and get back listing-ready media.</p>
+</div>
+<div class="services-grid reveal">
+<div class="service-card" data-service-filter="photography" role="button" tabindex="0">
+<span class="icon">i.</span>
+<div class="service-media"><img alt="" src="https://i.ibb.co/qMkCn5Gk/Digital-1-photography-8116.jpg"/></div>
+<h3>Photo Editing</h3>
+<p>Colour correction, sky replacement, HDR blending and retouching - sized for MLS, print, and social.</p>
+<span class="tag">Same-week delivery</span>
+</div>
+<div class="service-card" data-service-filter="video" role="button" tabindex="0">
+<span class="icon">ii.</span>
+<div class="service-media"><img alt="" src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"/></div>
+<h3>Video Editing</h3>
+<p>Raw walkthrough and drone footage cut into cinematic property films with music, colour, and pacing.</p>
+<span class="tag">Any footage source</span>
+</div>
+<div class="service-card" data-service-filter="plans" role="button" tabindex="0">
+<span class="icon">iii.</span>
+<div class="service-media"><img alt="" src="https://i.ibb.co/qh8Tw3s/image.jpg"/></div>
+<h3>Floor Plans</h3>
+<p>Clean, to-scale 2D and 3D plans drafted from your sketches, scans, or on-site measurements.</p>
+<span class="tag">24h turnaround</span>
+</div>
+<div class="service-card" data-service-filter="motion" role="button" tabindex="0">
+<span class="icon">iv.</span>
+<div class="service-media"><img alt="" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"/></div>
+<h3>Image to Video</h3>
+<p>Still photos brought to motion - pans, zooms and transitions built from images you already have.</p>
+<span class="tag">No reshoot needed</span>
+</div>
+<div class="service-card" data-service-filter="staging" role="button" tabindex="0">
+<span class="icon">v.</span>
+<div class="service-media comparison-media">
+<div class="before-after-slider service-slider" data-before-after>
+<img alt="Empty room before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/fdq93Y1h/Kitchen-living-dining.jpg"/>
+<div class="after-image-wrap">
+<img alt="Room after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/XfYchsLg/Kitchen-living-dining.jpg"/>
+</div>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+</div>
+<h3>Virtual Staging</h3>
+<p>Empty or dated rooms furnished digitally - realistic furniture, decor and lighting added in post.</p>
+<span class="tag">Empty room? No problem</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================
+     PORTFOLIO / GALLERY
+     ============================================ -->
+<section id="work">
+<div class="wrap">
+<div class="section-head work-head reveal">
+<h2>Selected work</h2>
+<p>A running set of recent edits, staged rooms, films, and plans. Filter by category below.</p>
+</div>
+<div class="filters work-filters">
+<button class="filter-btn active" data-filter="photography">Image Editing</button>
+<button class="filter-btn" data-filter="video">Video Editing</button>
+<button class="filter-btn" data-filter="staging">Virtual Staging</button>
+<button class="filter-btn" data-filter="plans">Floor Plans</button>
+<button class="filter-btn" data-filter="motion">Image to Video</button>
+</div>
+<div class="gallery" id="gallery">
+<!-- Photography -->
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/qMkCn5Gk/Digital-1-photography-8116.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/cSdS605R/Digital-1-photography-8289.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/3YBXYpmw/Digital-1-Photography-1325.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/VYP0Gwqx/Digital-1-Photography-1338.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/tpKw6R87/Digital-1-Photography-1841.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/vxB71G8L/Digital-1-Photography-5240.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/wrP816wq/Digital-1-Photography-5261.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/HDJbF3Qc/Digital-1-Photography-5766.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/YFyLg4q4/Digital-1-Photography-6728.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/7tPkRCDV/Digital-1-photography-6959.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/20xnWkb2/Digital-1-Photography-6994.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/7tQHrGsC/Digital-1-Photography-7043.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/Gv0mWSzD/Digital-1-Photography-7621.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/JjyFzRS0/Digital-1-Photography-7941.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/rGSHt5S6/Digital-1-Photography-2874.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://i.ibb.co/cKwK9gbG/Digital-1-Photography-9979.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652244/120_vtbocs.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652244/118_nmq7fk.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652242/115_w0rn5r.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652241/119_youh1u.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652237/117_wslbef.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652235/116_qva3kd.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652231/114_bbjrba.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652213/127_wqsssq.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652207/112_fhyzhr.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652200/123_btyfi7.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652195/121_oyaopd.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652176/104_jxdmo0.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652175/103_db9ohj.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652173/102_xqltld.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652168/101_x2joel.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652167/99_ldprdf.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652163/100_ax4qvz.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652163/111_uiixgb.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652158/97_t129cv.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652158/109_z466zz.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652154/110_jasaua.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652152/98_qrkuon.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652147/107_plvvjz.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652141/96_hkej30.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652131/108_zperhx.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652129/105_memvao.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652080/87_dgsfp1.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652080/85_nprd59.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652069/83_fjmwq0.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652069/86_pgl6uz.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652068/84_fzird4.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652063/91_f61rdw.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652062/93_wbwkwp.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652055/82_eipuk7.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652051/80_ag9hid.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652050/81_kbbp0f.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652050/95_vbifuw.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652029/94_y6tnz4.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784652021/89_nviwhv.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651996/90_fht4id.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651989/92_tfafds.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651985/88_xejgcu.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651954/70_tq1gnz.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651952/69_czjnux.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651940/67_lbwwpk.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651934/79_crlqow.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651930/65_pvt923.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651927/74_pcufm2.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651924/73_qamfoh.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651849/48_gfvd85.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651836/63_tkepqu.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651827/62_t8txoe.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651820/60_nylbyw.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<div class="gallery-item" data-cat="photography">
+<img alt="Image editing" src="https://res.cloudinary.com/u6ofilub/image/upload/v1784651820/57_voehsx.jpg"/>
+<div class="g-overlay"><span class="g-title">Image Editing</span></div>
+</div>
+<!-- Video -->
+<div class="gallery-item video-style" data-cat="video">
+<video class="gallery-video" autoplay muted playsinline>
+  <source src="https://res.cloudinary.com/dwsewvsmn/video/upload/v1770033118/Streksingel_265_ahl60c.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<button class="video-mute-btn" aria-label="Toggle mute"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a7 7 0 0 1 0 9.9M20.07 4a10 10 0 0 1 0 14.14M9 17H5v-6h4"></path></svg></button>
+<div class="g-overlay"><span class="g-title">Video Editing</span></div>
+</div>
+<div class="gallery-item plan-card" data-cat="plans">
+<img alt="Floor plan" src="https://res.cloudinary.com/dwsewvsmn/image/upload/v1784650736/003_m7bhwg.jpg"/>
+<div class="g-overlay"><span class="g-title">Floor Plans</span></div>
+</div>
+<div class="gallery-item video-style" data-cat="video">
+<video class="gallery-video" autoplay muted playsinline>
+  <source src="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784477844/work_projection_1_oid2fe.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<button class="video-mute-btn" aria-label="Toggle mute"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a7 7 0 0 1 0 9.9M20.07 4a10 10 0 0 1 0 14.14M9 17H5v-6h4"></path></svg></button>
+<div class="g-overlay"><span class="g-title">Video Editing</span></div>
+</div>
+<div class="gallery-item plan-card" data-cat="plans">
+<img alt="Floor plan" src="https://res.cloudinary.com/dwsewvsmn/image/upload/v1784650823/004_ovtnmj.jpg"/>
+<div class="g-overlay"><span class="g-title">Floor Plans</span></div>
+</div>
+<div class="gallery-item video-style" data-cat="video">
+<video class="gallery-video" autoplay muted playsinline>
+  <source src="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784526380/HOME_VERSION_02_1_1_gmvvrp.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<button class="video-mute-btn" aria-label="Toggle mute"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a7 7 0 0 1 0 9.9M20.07 4a10 10 0 0 1 0 14.14M9 17H5v-6h4"></path></svg></button>
+<div class="g-overlay"><span class="g-title">Video Editing</span></div>
+</div>
+<div class="motion-showcase" data-cat="motion">
+
+  <!-- TITLE -->
+  <p>Image to Video</p>
+  <p>Image to Video</p>
+
+  <!-- IMAGE STRIP -->
+  <div>
+    <p class="motion-thumb-label">Image to Video</p>
+    <div class="motion-thumbs" id="thumbContainer">
+    <img alt="Image to video sample 1" class="thumb active" data-output-video="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784566290/VID-20260715-WA0001_ib5ovk.mp4" data-src="https://i.ibb.co/spyjk1vm/IMG-20260715-WA0000-jpg.jpg" src="https://i.ibb.co/spyjk1vm/IMG-20260715-WA0000-jpg.jpg"/>
+    <img alt="Image to video sample 2" class="thumb" data-output-video="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784646338/lv_0_20260720222527_cymyxy.mp4" data-src="https://i.ibb.co/35c18zXy/Hanso-Idzerdapad-19-10-jpg.jpg" src="https://i.ibb.co/35c18zXy/Hanso-Idzerdapad-19-10-jpg.jpg"/>
+    <img alt="Image to video sample 3" class="thumb" data-output-video="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784646545/lv_0_20260721102824_up0zj4.mp4" data-src="https://i.ibb.co/vCnGNZy5/Hanso-Idzerdapad-19-13-jpg.jpg" src="https://i.ibb.co/vCnGNZy5/Hanso-Idzerdapad-19-13-jpg.jpg"/>
+    <img alt="Image to video sample 4" class="thumb" data-output-video="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784646483/lv_0_20260721102901_ju84tn.mp4" data-src="https://i.ibb.co/93crTCyt/Hanso-Idzerdapad-19-18-jpg.jpg" src="https://i.ibb.co/93crTCyt/Hanso-Idzerdapad-19-18-jpg.jpg"/>
+    <img alt="Image to video sample 5" class="thumb" data-output-video="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784646669/lv_0_20260721102934_dqlnws.mp4" data-src="https://i.ibb.co/Zp7v1Xzb/Hanso-Idzerdapad-19-23-jpg.jpg" src="https://i.ibb.co/Zp7v1Xzb/Hanso-Idzerdapad-19-23-jpg.jpg"/>
+    <img alt="Image to video sample 6" class="thumb" data-output-video="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784646616/lv_0_20260721103010_rivc0u.mp4" data-src="https://i.ibb.co/rB0Dqt7/Hanso-Idzerdapad-19-24-jpg.jpg" src="https://i.ibb.co/rB0Dqt7/Hanso-Idzerdapad-19-24-jpg.jpg"/>
     </div>
   </div>
 
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/TM2sVRJD/Digital1photography-189.jpg" alt="HDR Editing">
-</div>
-    <div class="card-content">
-      <h3>Twilight Editing</h3>
-      <p>Dramatic dusk aesthetics, warm interior lights & dramatic skies.</p>
-      <a href="https://twilightstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/xS4LCV7R/skye-studios-Pzke-Y0i98io-unsplash.jpg" alt="HDR Editing">
-</div>
-    <div class="card-content">
-      <h3>Video Editing</h3>
-      <p>Professional real estate video editing, color grading and walkthrough enhancements.</p>
-      
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/FLwKcKnn/mark-cruz-VW2o-U66mwbc-unsplash.jpg">
-</div>
-    <div class="card-content">
-      <h3>Image to Video Editing</h3>
-      <p>Transform static property photos into engaging video slideshows.</p>
-      
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/YTj38b98/Sample-3-2.jpg" alt="HDR Editing">
-</div>
-    <div class="card-content">
-      <h3>2D Floor Plan</h3>
-      <p>Detailed, accurate 2D floor plans with measurements and labels.</p>
-      <a href="https://2dfloorplan.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-
-  
-
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/tpsrwJYL/Digital-1-Photography-7057.jpg" alt="HDR Editing">
-</div>
-    <div class="card-content">
-      <h3>Virtual Staging</h3>
-      <p>Modern, lifelike virtual furniture placement to stage empty rooms beautifully.</p>
-      <a href="https://virtualstagingstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/R5Wkmd6/Digital-1-Photography-4072.jpg" alt="HDR Editing">
-</div>
-    <div class="card-content">
-      <h3>Flash Images</h3>
-      <p>Modern, photorealistic enhancements that instantly transform real estate images into stunning, market-ready visuals.</p>
-      <a href="https://flashstephen.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-
-  <div class="service-card">
-    <div class="card-img">
-  <img src="https://i.ibb.co/84Rs56Dt/Digital-1-Photography-6206-R.jpg" alt="HDR Editing">
-</div>
-    <div class="card-content">
-      <h3>Virtual Renovation</h3>
-      <p>Visualize property transformations: flooring, kitchen, bathroom makeovers.</p>
-      <a href="https://virtualrenovation.netlify.app/" target="_blank" class="explore-btn">Explore Now <i class="fas fa-arrow-right"></i></a>
-    </div>
+  <!-- PREVIEW OUTPUT (shows after clicking photos) -->
+  <p style="text-align:center; font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:var(--gold); margin-top:24px; margin-bottom:16px;">Image to Video</p>
+  <div class="motion-preview">
+    <video aria-label="Image to video sample 1 output" autoplay class="motion-output-video" id="motionOutputVideo" loop muted playsinline controls>
+      <source src="https://res.cloudinary.com/dwsewvsmn/video/upload/v1784566290/VID-20260715-WA0001_ib5ovk.mp4" type="video/mp4"/>
+    </video>
   </div>
 
 </div>
-    </div>
-
-    <div class="container">
-      <div class="help-wrapper">
-        <h3>Need Help? <span style="color:#e65c1e;">Contact Us</span></h3>
-        <p>Specific editing requirements? Our skilled team ensures polished, professional images ready to impress.</p>
-        <div class="help-buttons">
-          <a onclick="showServiceModal('contact')" class="btn-orange" style="background:#111;">Contact Support <i class="fas fa-headset"></i></a>
-          <a onclick="openWhatsApp()" class="btn-orange" style="background:white; color:#e65c1e; border:1px solid #e65c1e;">Live Chat <i class="fas fa-comment-dots"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="margin: 30px auto;">
-      <h2 class="section-title" style="margin-bottom: 50px;">What Our Clients Say</h2>
-      <div class="testimonial-flex">
-        <div class="testi-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Stephen & Marks delivers the most consistent HDR and staging work. Our listings shine every time."</p><h4>— Sophia Reed, Photographer</h4></div>
-        <div class="testi-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Their video editing and virtual renovation service is a game-changer. The results are breathtaking."</p><h4>— James Carter, Agency Partner</h4></div>
-        <div class="testi-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The 3D floor plans and twilight editing are flawless. Quality is unmatched."</p><h4>— Emily Lawson, Broker</h4></div>
-      </div>
-    </div>
-
-    <div class="container" style="margin: 70px auto 20px;">
-      <h2 class="section-title">Simple 4-Step Workflow</h2>
-      <div class="steps-row">
-        <div class="step-card"><div class="step-num">1</div><h4>Upload Photos</h4><p>Share your raw images or videos via our secure portal.</p></div>
-        <div class="step-card"><div class="step-num">2</div><h4>Select Service</h4><p>Pick enhancement, staging, video, floor plans & more.</p></div>
-        <div class="step-card"><div class="step-num">3</div><h4>Share Instructions</h4><p>Notes, references & deadline.</p></div>
-        <div class="step-card"><div class="step-num">4</div><h4>Download Finals</h4><p>Receive high-res images/videos ready for listing.</p></div>
-      </div>
-    </div>
-  </div>
-</main>
-
+<div class="gallery-item plan-card" data-cat="plans">
+<img alt="Floor plan" src="https://res.cloudinary.com/dwsewvsmn/image/upload/v1784650583/0_tml16b.jpg"/>
+<div class="g-overlay"><span class="g-title">Floor Plans</span></div>
+</div>
+<div class="gallery-item plan-card" data-cat="plans">
+<img alt="Floor plan" src="https://res.cloudinary.com/dwsewvsmn/image/upload/v1784650668/002_gpzl1q.jpg"/>
+<div class="g-overlay"><span class="g-title">Floor Plans</span></div>
+</div>
+<!-- Virtual Staging -->
+<div class="gallery-item tall comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Empty living room before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/fdq93Y1h/Kitchen-living-dining.jpg"/>
+<div class="after-image-wrap">
+<img alt="Same living room after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/XfYchsLg/Kitchen-living-dining.jpg "/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Empty bedroom before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/hJLWLGLW/Kitchen.jpg"/>
+<div class="after-image-wrap">
+<img alt="Bedroom after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/BV6f7qdT/Kitchen.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Empty dining room before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/tMG7pzh3/Kitchen-living-dining.jpg"/>
+<div class="after-image-wrap">
+<img alt="Dining space after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/cSqcynYx/Kitchen-living-dining.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item tall comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Empty spare room before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/DgrMsj0q/Kitchen-living-dining-1.jpg"/>
+<div class="after-image-wrap">
+<img alt="Home office after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/nqFbyxDs/Kitchen-living-dining-1.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Empty patio before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/8gh3gj5J/img03.jpg"/>
+<div class="after-image-wrap">
+<img alt="Outdoor patio after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/rKN8Y5fz/img04.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Virtual staging before" class="before-image" draggable="false" src="https://i.ibb.co/fV1zYDdJ/img02.jpg"/>
+<div class="after-image-wrap">
+<img alt="Virtual staging after" class="after-image" draggable="false" src="https://i.ibb.co/v4LfbWdj/img01.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item tall comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Unfurnished living and dining hall before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/nNkjS1XK/Hall-living-dining.jpg"/>
+<div class="after-image-wrap">
+<img alt="Furnished living and dining hall after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/3ydb5P1C/Hall-living-dining.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after hall living dining virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Unfurnished hall before virtual staging" class="before-image" draggable="false" src="https://i.ibb.co/yJLhF6P/Hall.jpg"/>
+<div class="after-image-wrap">
+<img alt="Furnished hall after virtual staging" class="after-image" draggable="false" src="https://i.ibb.co/gM68dBJm/Hall.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after hall virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item tall comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Virtual staging before" class="before-image" draggable="false" src="https://i.ibb.co/93GgbYDs/Bed-2.jpg"/>
+<div class="after-image-wrap">
+<img alt="Virtual staging after" class="after-image" draggable="false" src="https://i.ibb.co/6Rf1K001/Bed-2.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item tall comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Virtual staging before" class="before-image" draggable="false" src="https://i.ibb.co/jkNTMwvb/Bed-2-1.jpg"/>
+<div class="after-image-wrap">
+<img alt="Virtual staging after" class="after-image" draggable="false" src="https://i.ibb.co/gFmsSZKv/Bed-2-1.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Virtual staging before" class="before-image" draggable="false" src="https://i.ibb.co/991KbyvJ/Bed-1.jpg"/>
+<div class="after-image-wrap">
+<img alt="Virtual staging after" class="after-image" draggable="false" src="https://i.ibb.co/NfkfHgJ/Bed-1.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Virtual staging before" class="before-image" draggable="false" src="https://i.ibb.co/zT0vqvHF/Bed-1-1.jpg"/>
+<div class="after-image-wrap">
+<img alt="Virtual staging after" class="after-image" draggable="false" src="https://i.ibb.co/4nWqThct/Bed-1-1.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+<div class="gallery-item tall comparison-item" data-cat="staging">
+<div class="before-after-slider" data-before-after>
+<img alt="Virtual staging before" class="before-image" draggable="false" src="https://i.ibb.co/RpCgJWRP/1716706709433.jpg"/>
+<div class="after-image-wrap">
+<img alt="Virtual staging after" class="after-image" draggable="false" src="https://i.ibb.co/Pq666G7/1716706709438.jpg"/>
+</div>
+<span class="compare-label before-label">Before</span>
+<span class="compare-label after-label">After</span>
+<button aria-label="Drag to compare before and after virtual staging" class="compare-handle" type="button">
+<span></span>
+</button>
+</div>
+<div class="g-overlay"><span class="g-title">Virtual Staging</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================
+     PROCESS - image to video signature explainer
+     ============================================ -->
+<section class="process" id="process">
+<div class="wrap process-inner">
+<div class="process-visual reveal">
+<img alt="Still photo of a living room" class="still" src="https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
+<img alt="Same room, motion-graded version" class="in-motion" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"/>
+<div class="scanline"></div>
+</div>
+<div class="section-head reveal">
+<p class="eyebrow">Our signature service</p>
+<h2 style="margin-top:18px; font-size:clamp(28px,3.6vw,42px);">From still to motion, without a second shoot</h2>
+</div>
+<ul class="process-steps reveal">
+<li>
+<span class="num">i.</span>
+<div><h4>Send your raw files</h4><p>Upload the photos or footage you already have, from any camera, phone, or drone.</p></div>
+</li>
+<li>
+<span class="num">ii.</span>
+<div><h4>We edit and build the motion</h4><p>Colour, cuts, and for stills - pans, zooms and transitions choreographed frame by frame.</p></div>
+</li>
+<li>
+<span class="num">iii.</span>
+<div><h4>Deliver, ready to post</h4><p>Cut to length for listings, reels, and stories - typically within 48 hours.</p></div>
+</li>
+</ul>
+</div>
+</section>
+<!-- ============================================
+     QUOTE
+     ============================================ -->
+<section>
+<div class="wrap quote-block reveal">
+<p>"Our listings that were edited by Stephen & Marks.Co consistently sell 15-20% faster than our competitors. The quality is unmatched, and the turnaround time is incredible."</p>
+<cite>Maria Rodriguez, Real Estate Agent, San Francisco</cite>
+<div class="quote-stats">
+<div>
+<strong>1500+</strong>
+<span>Happy Clients</span>
+</div>
+<div>
+<strong>100,000+</strong>
+<span>Images Processed</span>
+</div>
+<div>
+<strong>95%</strong>
+<span>Repeat Business Rate</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================
+     CONTACT
+     ============================================ -->
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="section-head reveal">
+<p class="eyebrow">Get in touch</p>
+<h2 style="margin-top:20px;">Let's edit<br/>your next listing.</h2>
+<p>Send over your raw photos or footage and tell us what you need - photo edits, a video cut, floor plans, or a motion piece from existing images - and we'll reply with a quote.</p>
+<div class="contact-list">
+<a href="mailto:stemarks.sm@gmail.com"><span>Email</span>stemarks.sm@gmail.com</a>
+<a href="tel:+919632155956"><span>Phone</span>+91 96321 55956</a>
+<a href="#"><span>Based in</span>Bangalore, India</a>
+</div>
+</div>
+<form action="http://127.0.0.1:5000/api/contact" class="contact-form reveal" id="contactForm" method="POST">
+<div class="form-row">
+<div class="field">
+<label for="fname">Name</label>
+<input id="fname" name="name" placeholder="Your name" required="" type="text"/>
+</div>
+<div class="field">
+<label for="femail">Email</label>
+<input id="femail" name="email" placeholder="you@email.com" required="" type="email"/>
+</div>
+</div>
+<div class="field">
+<label for="fservice">Service needed</label>
+<select id="fservice" name="service">
+<option>Photo Editing</option>
+<option>Video Editing</option>
+<option>Virtual Staging</option>
+<option>Floor Plans</option>
+<option>Image to Video</option>
+<option>Not sure yet</option>
+</select>
+</div>
+<div class="field">
+<label for="fmessage">Tell us about the property</label>
+<textarea id="fmessage" name="message" placeholder="Address, size, timeline..."></textarea>
+</div>
+<button class="submit-btn" type="submit">Send message</button>
+<p class="form-note" id="formNote" role="status"></p>
+</form>
+</div>
+</section>
 <footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-col"><h4>Professional enhancement</h4><p>Stephen & Marks premium real estate editing studio</p></div>
-      <div class="footer-col"><h4>Quick Links</h4><ul><li><a onclick="showServiceModal('real-estate-editing')">Real Estate Editing</a></li><li><a onclick="showServiceModal('virtual-staging')">Virtual Staging</a></li><li><a onclick="showServiceModal('floor-plans')">Floor Plans</a></li><li><a onclick="showServiceModal('portfolio')">Portfolio</a></li><li><a onclick="showServiceModal('pricing')">Pricing</a></li><li><a onclick="showServiceModal('contact')">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-envelope"></i> <a onclick="openEmail()">info@stephenmarks.in</a></li><li><i class="fas fa-phone"></i> <a onclick="makeCall()">+91 96321 55956</a></li><li><i class="fas fa-map-pin"></i> 19, Krishna Nivas 2nd Cross, <br>RM Nagar Bangalore - 560016. </li></ul><a onclick="openWhatsApp()" class="whatsapp-badge"><i class="fab fa-whatsapp"></i> WhatsApp Inquiry</a></div>
-    </div>
-    <div class="copyright" style="text-align:center; margin-top: 50px;">   © 2019 Stephen & Marks All Rights Reserved.</div>
-  </div>
-</footer>
-
-<!-- MODAL -->
-<div id="actionModal" class="modal-overlay">
-  <div class="modal-content">
-    <span class="modal-close" onclick="closeModal()">&times;</span>
-    <div id="modalBody">
-      <h3 id="modalTitle">Welcome</h3>
-      <p id="modalMessage">Thank you for visiting Stephen & Marks. How can we help you today?</p>
-      <button class="modal-btn" onclick="closeModal()">Got it</button>
-    </div>
-  </div>
+<div class="wrap">
+<span class="foot-logo">Stephen &amp; Marks.Co - 2022</span>
+<div class="foot-links">
+<a aria-label="Instagram" href="https://www.instagram.com/stephenmarks07/" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a aria-label="Facebook" href="#">Facebook</a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/stephen-marks-552766332/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
 </div>
-<script src="script.js"></script>
+</div>
+</footer>
+<!-- ============================================
+     LIGHTBOX
+     ============================================ -->
+<div class="lightbox" id="lightbox">
+<button aria-label="Close" class="lightbox-close" id="lightboxClose">Close</button>
+<img alt="" id="lightboxImg" src=""/>
+<video class="lightbox-video" id="lightboxVideo" controls playsinline></video>
+<p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+<script src="script.js?v=image-to-video-output-20260721"></script>
 </body>
 </html>
